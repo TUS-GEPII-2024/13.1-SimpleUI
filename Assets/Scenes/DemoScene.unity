@@ -253,6 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 59016985}
   - component: {fileID: 59016984}
+  - component: {fileID: 59016986}
   m_Layer: 0
   m_Name: Blade
   m_TagString: Blade
@@ -300,7 +301,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -1281038274231056933, guid: d334815eacf57a24a98991a7a402a576, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -327,6 +328,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &59016986
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59016983}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &200093898
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +539,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1295566667443404, guid: 5d6d6e1224cb887498afa13f21b86e51, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1610541762}
+    - targetCorrespondingSourceObject: {fileID: 1295566667443404, guid: 5d6d6e1224cb887498afa13f21b86e51, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1610541768}
   m_SourcePrefab: {fileID: 100100000, guid: 5d6d6e1224cb887498afa13f21b86e51, type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -1899,9 +1938,9 @@ RectTransform:
   - {fileID: 1369675551}
   m_Father: {fileID: 200093902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 377, y: 216}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -93, y: -46}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067742493
@@ -2533,6 +2572,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinUICounter: {fileID: 1306143967}
+--- !u!114 &1610541768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610541753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b6a3c87a8cddc488bcb2e2af31c71e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 1067742493}
 --- !u!1 &1683814562
 GameObject:
   m_ObjectHideFlags: 0
